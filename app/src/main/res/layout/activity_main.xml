@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="49dp"
+        android:text="Calculadora"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtVisorOperacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVisorOperacion"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/visorNumeros"
+        app:layout_constraintEnd_toEndOf="@+id/visorNumeros"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/visorNumeros"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <TextView
+        android:id="@+id/visorNumeros"
+        android:layout_width="157dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="15dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVisorOperacion" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="391dp"
+        android:layout_height="364dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visorNumeros">
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/siete"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="7"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+            <Button
+                android:id="@+id/ocho"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="8"
+                tools:layout_editor_absoluteX="114dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+            <Button
+                android:id="@+id/nueve"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="9"
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+            <Button
+                android:id="@+id/mas"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="+"
+                tools:layout_editor_absoluteX="310dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/cuatro"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="4"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="280dp" />
+
+            <Button
+                android:id="@+id/cinco"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="5"
+                tools:layout_editor_absoluteX="114dp"
+                tools:layout_editor_absoluteY="280dp" />
+
+            <Button
+                android:id="@+id/seis"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="6"
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="280dp" />
+
+            <Button
+                android:id="@+id/menos"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="-"
+                tools:layout_editor_absoluteX="310dp"
+                tools:layout_editor_absoluteY="280dp" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/uno"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="361dp" />
+
+            <Button
+                android:id="@+id/dos"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="2"
+                tools:layout_editor_absoluteX="114dp"
+                tools:layout_editor_absoluteY="361dp" />
+
+
+            <Button
+                android:id="@+id/tres"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="3"
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="361dp" />
+
+            <Button
+                android:id="@+id/multiplicacion"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="*"
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="361dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/cero"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="0"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="361dp" />
+
+            <Button
+                android:id="@+id/resultado"
+                android:layout_width="95dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Result"
+                tools:layout_editor_absoluteX="114dp"
+                tools:layout_editor_absoluteY="361dp" />
+
+
+            <Button
+                android:id="@+id/borrar"
+                android:layout_width="95dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Borrar"
+
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="361dp" />
+
+            <Button
+                android:id="@+id/division"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="/"
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="361dp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
